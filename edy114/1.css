@@ -1,0 +1,147 @@
+:root {
+    --bg: #fff8f0;
+    --text: #222;
+    --card: #fff;
+    --primary: #c0392b;
+}
+
+body.dark {
+    --bg: #1e1e1e;
+    --text: #eee;
+    --card: #2a2a2a;
+    --primary: #e74c3c;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+#toggleTheme {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+nav {
+    background: var(--card);
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.cardapio-section {
+    margin-bottom: 30px;
+}
+
+.cardapio-section h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.item {
+    background: var(--card);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.item h3 {
+    margin: 0;
+}
+
+.item span {
+    font-weight: bold;
+    float: right;
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        color: #fff;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.dark header {
+    background-color: #222;
+}
+
+.dark nav {
+    background-color: #444;
+}
+
+.dark .cardapio-section {
+    background-color: #555;
+}
+
+.dark .item {
+    border-color: #666;
+}

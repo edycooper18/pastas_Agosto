@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Simulador de Bolsa de Valores</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Ações em Tempo Real</h1>
+
+        <div class="stock-info">
+            <h2 id="stock-name">Ação Simulada (SIMU)</h2>
+            <div class="price-display">
+                Valor Atual: <span id="current-price">R$ 0,00</span>
+                <span id="price-change" class="change-neutral">(+0,00%)
+                </span>    
+                </div>          
+        </div>
+        <div class="chart-container">
+            <canvas id="stock-chart"></canvas>
+    </div>
+    <div class="controls">
+        <button id="start-simulation-btn" class="button primary">
+            Iniciar Simulação</button>
+            <button id="stop-simulation-btn" class="button">
+            Parar Simulação</button>
+            <button id="reset-chart-btn" class="button">
+            Redefinir Gráfico</button>
+    </div>
+    <div class="footer-info">
+        <p>Este e um simulador. Os dados nao sao reais e nao representam o desempenho de mercado</p>
+    </div>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>

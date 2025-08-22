@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Mercado</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="simulator-container">
+        <h1>Meu Mercado Dinâmico</h1>
+        <div class="market-section section">
+            <h2>Produtos Disponíveis</h2>
+            <div id="product-list" class="product-list">
+            </div>
+        </div>
+        <div class="cart-section section">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items" class="cart-items">
+                <p id="empty-cart-message"
+                class="empty-message">Seu carrinho está vazio</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">R$: 0.00</span></p>
+                <div class="cart-actions">
+                    <button id="clear-cart-btn"
+                    class="action-button secondary"
+                    disabled>Limpar Carrinho</button>
+                    <button id="checkout-btn"
+                    class="action-button primary"
+                    disabled>Finalizar Compra</button>
+                </div>
+            </div>
+            <div id="message-box" class="modal">
+                <div class="modal-content">
+                    <p id="message-text"></p>
+                    <button id="close-message-btn"
+                    class="action-button">OK</button>
+                </div>
+            </div>
+        </div>
+    <script src="1.js"></script>
+</body>
+</html>
